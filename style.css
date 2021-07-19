@@ -1,0 +1,414 @@
+@font-face { font-family: Lovelyn; src: url('Lovelyn Free Personal USe.otf'); } 
+
+html , body {
+height: 100%; width: 100%;
+margin: 0px;
+padding: 0px;
+
+}
+.bottom-link{
+    padding:0px;
+    color: white;
+}
+.bottom-link:hover{
+    color: lightgrey;
+}
+.footer {
+  background-color: #282c35;
+  color: aliceblue;
+  height: 250px;
+  min-height: 300px;
+}
+.symbols{
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+h3{
+  border-bottom: groove papayawhip 2px;
+  padding-bottom: 5px;
+}
+
+.division{
+  text-align: center;
+  float: left;
+  width: 25%;
+  height: 200px;
+  background-color: #282c35;
+  color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.bottom{
+  background-color:black;
+  color :  lightcyan;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(190, 151, 91,.5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+#logo{
+  width: 85px;
+  height: 80px;
+  border-radius: 40px;
+  background-position: center;
+}
+ body {
+  background-color: black;
+}
+
+h1 {
+  font-family: Lovelyn;
+  font-size: 145px;
+  text-align: center;
+  padding-top: 0px;
+  color: white;
+}
+.fon{
+   font-family: Arial, san-serif;
+   font-size: 16px ;
+}
+.nav-link{
+  font-style: 55px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("crown-agency-216105-unsplash.jpg");
+  background-size: cover ;
+  background-position: center ;
+  display: block;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+
+.header a {
+  float: right;
+  text-align: center;
+  font-size: 35px ;
+  font-weight: bold;
+  color: black ;
+  text-decoration: underline;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.color {
+  background: rgba(52, 58, 64,0.1);
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: white ;
+}
+.panel{
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: 'Allura', cursive, Calibri, sans-serif;
+}
+
+.jumbotron2 {
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("main_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.list-group {
+  opacity: 0.8;/*OPACITY of menu , dishes,etc*/
+  filter: alpha(opacity=50);
+  font-family:Lovelyn;
+}
+
+.nm {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: Impact, Charcoal, sans-serif; /*menu -categories-font*/
+  letter-spacing: 2px ;
+}
+.nm:hover {
+  color: black;
+}
+
+.badge {
+  color: black;
+  font-size: medium;/*nos of dishes count - present on right side*/
+}
+
+#sugg , #ent , #plat , #des , #bois {
+  padding-left: 33px;
+  color: white;
+  font-family: Lovelyn; /*Dishes font*/
+  font-size: large;
+}
+
+
+
+
+
+/*Photos - Pre-display*/
+.jumbotron1 {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("crown-agency-216105-unsplash.jpg");/*photos-background*/
+  background-size: cover ;
+  background-position: center ;
+  display: block;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.one {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.food-pic{
+  padding-bottom: 20px;
+}
+
+#gallery img {
+  width: 250px;
+  height: 170px;
+
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; /*Webkit: animation duration*/
+  -moz-transition-duration: 0.3; /*Mozilla: animation duration*/
+  -o-transition-duration: 0.3s; /*Opera: animation duration*/
+  opacity: 0.65; /*initial opacity of the image*/
+  z-index: 1; /*place non-hover images behind the hover image*/
+  margin: 2px; /*remove default margin for images*/
+  position: relative; /*solve the problem with z-index in Chrome*/
+}
+
+#gallery img:hover {
+  -webkit-transform: scale( 1.5 ); /*Webkit: increase size to 1.5x*/
+  transform: scale(1.5);
+  -moz-transform: scale( 1.5 ); /*Mozilla: scaling*/
+  -o-transform: scale( 1.5 ); /*Opera: scaling*/
+  box-shadow: 0px 0px 50px gray; /*CSS3 shadows: 25px fuzzy shadow around the entire image*/
+  -webkit-box-shadow: 0px 0px 50px gray; /*Webkit: shadows*/
+  -moz-box-shadow: 0px 0px 50px gray; /*Mozilla: shadows*/
+  opacity: 1; /*default opacity*/
+  z-index: 10; /*place hover image in front the non-hover images*/
+}
+
+
+.pagination {
+    clear:both;
+    position:relative;
+    font-size:11px;
+    text-align:center;
+    margin-bottom: 0;
+}
+
+.pagination span, .pagination a {
+    display:inline-block;
+    margin: 2px 2px 2px 0;
+    padding:6px 9px 5px 9px;
+    text-decoration:none;
+    color: #ddd;
+    background: #222;
+}
+
+.pagination .current{
+    padding:4px 9px 5px 9px;
+    font-weight: bold;
+    background: #0950E8;
+}
+.photo{
+  height: 180px;
+}
+
+.photo1{
+  height: 150px;
+}
+
+.jumbotron4 {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("architecture-chair-dining-empty.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.up{
+  height: 30px;
+}
+
+
+.jumbotron5{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("blur-burn-dark-1082343.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+* {
+   box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-font-smoothing:antialiased;
+   -moz-font-smoothing:antialiased;
+   -o-font-smoothing:antialiased;
+   motion-rotation:antialiased;
+   text-rendering:optimizeLegibility;
+}
+body {
+   color: #C0C0C0;
+   font-family: Arial, san-serif;
+}
+
+
+/* Contact Form Styles */
+
+#contact-form {
+ background-color:rgba(72,72,72,0.7);
+   padding: 12px 25px 6px 25px;
+   max-width:100%;
+   float: left;
+   left: 50%;
+   position: absolute;
+   margin-left: -160px;
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+   color: white;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+   font-size: 15px;
+   margin-bottom: 2px;
+   font-family: Arial, san-serif;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+   width:100%;
+   background: #fff;
+   border: 0;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   margin-bottom: 25px;
+   padding: 5px;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+   background-color: #E5E6E7;
+}
+#contact-form textarea {
+   width:100%;
+   height: 100%;
+}
+#contact-form button[type="submit"] {
+   cursor:pointer;
+   width:100%;
+   border:none;
+   background:black;
+   background-image:linear-gradient(bottom, #FF7D25 0%, black 52%);
+   background-image:-moz-linear-gradient(bottom, #FF7D25 0%, black 52%);
+   background-image:-webkit-linear-gradient(bottom, #FF7D25 0%, black 52%);
+   color:#FFF;
+   padding:10px;
+   border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+   background-image:linear-gradient(bottom, black 0%, #FF7D25 52%);
+   background-image:-moz-linear-gradient(bottom, black 0%, #FF7D25 52%);
+   background-image:-webkit-linear-gradient(bottom, black 0%, #FF7D25 52%);
+   -webkit-transition:background 0.3s ease-in-out;
+   -moz-transition:background 0.3s ease-in-out;
+   transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+.google-map{
+  border:0;
+  height: 450px;
+  width:600px;
+}
+
+@media only screen and (max-width: 580px) {
+    .division{
+    text-align: center;
+   float: none;
+    width: 100%;
+    height: auto;
+    font-size: x-small;
+  background-color: #282c35;
+  color: aliceblue;
+  padding-left: 20%;
+  padding-right: 20%;
+  }
+  .bottom{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 2% 20% ;
+    font-size: 8px;
+  }
+  .footer {
+  background-color: #282c35;
+  color: aliceblue;
+  height: 150%;
+  min-height: 250px;
+}
+
+   #contact-form{
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+}
+
+
+/*SK*/
+
+.highlight {
+	color: #d3a261;
+	font-family: 'Allura', cursive, Calibri, sans-serif;
+	text-transform: none;
+  font-size: 60px;
+  
+}
+
+.panel{
+  font-family: 'Allura', cursive, Calibri, sans-serif;
+}
+
+.col{
+  font-family: 'Allura', cursive, Calibri, sans-serif;
+}
